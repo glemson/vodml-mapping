@@ -5,3 +5,5 @@
 /build.properties
 /java/jaxb-gen/
 /java/src-gen/
+/lib/
+/libs.old/

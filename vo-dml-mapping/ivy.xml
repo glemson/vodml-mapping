@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ivy>
+<ivy-module version="2.0">
+	<info organisation="IDIES" module="java-tomcat-template"/>
+	<configurations>
+		<conf name="catalina"/>
+		<conf name="compile"/>
+		<conf name="test"/>
+	</configurations>
+	<dependencies>
+		<dependency org="org.apache.logging.log4j" name="log4j-api" rev="2.5" conf="compile->default" />
+		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.5" conf="compile->default" />
+		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.2" conf="compile->default"/>
+		<dependency org="commons-io" name="commons-io" rev="2.5" conf="compile->default"/>
+		<dependency org="commons-validator" name="commons-validator" rev="1.6" conf="compile->default"/>
+		<dependency org="org.json" name="json" rev="20160810" conf="compile->default"/>
+
+		<dependency org="junit" name="junit" rev="4.12" conf="test->default"/>
+
+    <!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-xjc -->
+    <dependency org="com.sun.xml.bind" name="jaxb-xjc" rev="2.0.3"/>
+
+		<dependency org="javax.xml.bind" name="jaxb-api" rev="2.2.12" conf="compile->default"/>
+		<dependency org="javax.xml" name="jaxb-impl" rev="2.1" conf="compile->default"/>
+		<dependency org="javax.xml" name="jsr173" rev="1.0" conf="compile->default"/>
+		<dependency org="org.opengis.cite.saxon" name="saxon9" rev="9.0.0.8" conf="compile->default"/>
+    
+    <!-- https://mvnrepository.com/artifact/net.sf.kxml/kxml2 -->
+  <dependency org="kxml2" name="kxml2" rev="2.3.0"/>
+    <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+<dependency org="org.mongodb" name="mongo-java-driver" rev="2.9.3"/>
+    <!-- https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink -->
+<dependency org="org.eclipse.persistence" name="eclipselink" rev="2.5.0"/>
+    
+    
+	</dependencies>
+</ivy-module>
